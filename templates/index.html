@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Grade Calculator</h1>
+        <form id="grade-form">
+            <div id="subjects-container">
+                <!-- Initial subject section -->
+                <div class="subject">
+                    <button type="button" class="remove-button" onclick="removeSubject(this)">−</button>
+                    <label>Subject Name:</label>
+                    <input type="text" name="subject_name[]" placeholder="Enter subject name" required>
+
+                    <label>Grade:</label>
+                    <input type="number" name="subject_grade[]" min="0" max="100" placeholder="Enter grade" required>
+
+                    <label>Percentage of Total:</label>
+                    <input type="number" name="subject_percentage[]" min="0" max="100" placeholder="Enter percentage of total" required>
+
+                    <label>
+                        <input type="checkbox" class="expand-checkbox"> Add Sub-Grades
+                    </label>
+
+                    <div class="sub-grade-container">
+                        <div class="sub-grade" style="display: none;">
+                            <label>Sub-Grade Name:</label>
+                            <input type="text" name="sub_grade_name[]" placeholder="Enter sub-grade name">
+
+                            <label>Sub-Grade:</label>
+                            <input type="number" name="sub_grade[]" min="0" max="100" placeholder="Enter sub-grade">
+
+                            <label>Sub-Grade Percentage:</label>
+                            <input type="number" name="sub_grade_percentage[]" min="0" max="100" placeholder="Enter sub-grade percentage">
+                            <button type="button" class="remove-sub-grade" onclick="removeSubGrade(this)">−</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Buttons to add more subjects -->
+            <div class="add-remove-buttons">
+                <button type="button" onclick="addSubject()">+</button>
+            </div>
+            <!-- Button to calculate the average grade -->
+            <button type="button" onclick="calculateAverage()">Calculate Average</button>
+        </form>
+    </div>
+
+    <!-- Pop-up window for result -->
+    <div id="resultPopup">
+        <p id="resultText"></p>
+    </div>
+
+    <!-- Link to the JavaScript file -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
