@@ -1,14 +1,14 @@
 from flask import Flask, request, render_template
 
-app = Flask(__name__)
+asafs_calc = Flask(__name__)
 
 
-@app.route('/')
+@asafs_calc.route('/')
 def index():
     return render_template('index.html')
 
 
-@app.route('/calculate', methods=['POST'])
+@asafs_calc.route('/calculate', methods=['POST'])
 def calculate():
     subject_names = request.form.getlist('subject_name[]')
     subject_grades = request.form.getlist('subject_grade[]')
@@ -52,4 +52,4 @@ def calculate():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    asafs_calc.run(debug=True)
