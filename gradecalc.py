@@ -1,12 +1,11 @@
 from flask import Flask, request, render_template
+import os
 
 gradecalc = Flask(__name__)
-
 
 @gradecalc.route('/')
 def index():
     return render_template('index.html')
-
 
 @gradecalc.route('/calculate', methods=['POST'])
 def calculate():
@@ -50,6 +49,6 @@ def calculate():
 
     return f"Average Grade: {average_grade:.2f}%"
 
-
 if __name__ == '__main__':
-    gradecalc.run(debug=True)
+    port = int(os.environ.get('PORT', 5000))
+    gradecalc.run(host='0.0.0.0', port=port)
