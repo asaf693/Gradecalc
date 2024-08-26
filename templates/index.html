@@ -1,43 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Declares the document type and version of HTML -->
+<html lang="en"> <!-- Start of the HTML document, specifying the language as English -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grade Calculator</title>
-    <!-- Link to the CSS file -->
+    <meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures the page scales correctly on different devices -->
+    <title>Grade Calculator By Asaf</title> <!-- Title of the web page, displayed in the browser tab -->
+    <!-- Link to the CSS file for styling the page -->
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
+    <!-- Main container for the content -->
     <div class="container">
-        <h1>Grade Calculator</h1>
+        <h1>Grade Calculator</h1> <!-- Main heading of the page -->
+        <!-- Form for inputting grades and calculating the average -->
         <form id="grade-form">
             <div id="subjects-container">
                 <!-- Initial subject section -->
                 <div class="subject">
+                    <!-- Button to remove the subject section -->
                     <button type="button" class="remove-button" onclick="removeSubject(this)">−</button>
-                    <label>Subject Name:</label>
-                    <input type="text" name="subject_name[]" placeholder="Enter subject name" required>
 
-                    <label>Grade:</label>
-                    <input type="number" name="subject_grade[]" min="0" max="100" placeholder="Enter grade" required>
+                    <label>Subject Name:</label> <!-- Label for the subject name input -->
+                    <input type="text" name="subject_name[]" placeholder="Enter subject name" required> <!-- Input field for the subject name -->
 
-                    <label>Percentage of Total:</label>
-                    <input type="number" name="subject_percentage[]" min="0" max="100" placeholder="Enter percentage of total" required>
+                    <label>Grade:</label> <!-- Label for the grade input -->
+                    <input type="number" name="subject_grade[]" min="0" max="100" placeholder="Enter grade" required> <!-- Input field for the grade -->
+
+                    <label>Percentage of Total:</label> <!-- Label for the percentage input -->
+                    <input type="number" name="subject_percentage[]" min="0" max="100" placeholder="Enter percentage of total" required> <!-- Input field for the percentage -->
 
                     <label>
-                        <input type="checkbox" class="expand-checkbox"> Add Sub-Grades
+                        <input type="checkbox" class="expand-checkbox"> Add Sub-Grades <!-- Checkbox to show additional sub-grade inputs -->
                     </label>
 
+                    <!-- Container for sub-grades -->
                     <div class="sub-grade-container">
+                        <!-- Sub-grade section, initially hidden -->
                         <div class="sub-grade" style="display: none;">
-                            <label>Sub-Grade Name:</label>
-                            <input type="text" name="sub_grade_name[]" placeholder="Enter sub-grade name">
+                            <label>Sub-Grade Name:</label> <!-- Label for the sub-grade name input -->
+                            <input type="text" name="sub_grade_name[]" placeholder="Enter sub-grade name"> <!-- Input field for the sub-grade name -->
 
-                            <label>Sub-Grade:</label>
-                            <input type="number" name="sub_grade[]" min="0" max="100" placeholder="Enter sub-grade">
+                            <label>Sub-Grade:</label> <!-- Label for the sub-grade input -->
+                            <input type="number" name="sub_grade[]" min="0" max="100" placeholder="Enter sub-grade"> <!-- Input field for the sub-grade -->
 
-                            <label>Sub-Grade Percentage:</label>
-                            <input type="number" name="sub_grade_percentage[]" min="0" max="100" placeholder="Enter sub-grade percentage">
+                            <label>Sub-Grade Percentage:</label> <!-- Label for the sub-grade percentage input -->
+                            <input type="number" name="sub_grade_percentage[]" min="0" max="100" placeholder="Enter sub-grade percentage"> <!-- Input field for the sub-grade percentage -->
+
+                            <!-- Button to remove the sub-grade section -->
                             <button type="button" class="remove-sub-grade" onclick="removeSubGrade(this)">−</button>
                         </div>
                     </div>
@@ -45,19 +53,19 @@
             </div>
             <!-- Buttons to add more subjects -->
             <div class="add-remove-buttons">
-                <button type="button" onclick="addSubject()">+</button>
+                <button type="button" onclick="addSubject()">+</button> <!-- Button to add a new subject -->
             </div>
             <!-- Button to calculate the average grade -->
             <button type="button" onclick="calculateAverage()">Calculate Average</button>
         </form>
     </div>
 
-    <!-- Pop-up window for result -->
+    <!-- Pop-up window for displaying the result -->
     <div id="resultPopup">
-        <p id="resultText"></p>
+        <p id="resultText"></p> <!-- Paragraph to show the result text -->
     </div>
 
-    <!-- Link to the JavaScript file -->
+    <!-- Link to the JavaScript file for handling form interactions -->
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
