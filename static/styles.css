@@ -135,7 +135,7 @@ input[type="submit"]:hover, button:hover {
     background: #4CAF50; /* Sets the background color to green */
     color: white; /* Sets the text color to white */
     border: none; /* Removes the default border */
-    border-radius: 50%; /* Makes the button circular */
+    /*border-radius: 50%; !* Makes the button circular *!*/
     cursor: pointer; /* Changes the cursor to a pointer when hovering */
     display: flex; /* Uses flexbox to align text */
     justify-content: center; /* Centers the text horizontally */
