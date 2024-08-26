@@ -1,118 +1,149 @@
+/* Base styling for the body of the document */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #f0f0f0;
+    font-family: Arial, sans-serif; /* Sets the font family to Arial with a fallback to sans-serif */
+    margin: 0; /* Removes the default margin around the body */
+    padding: 20px; /* Adds 20px padding inside the body */
+    background-color: #f0f0f0; /* Sets a light grey background color */
 }
+
+/* Container for centering and styling content */
 .container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Limits the container width to 800px */
+    margin: auto; /* Centers the container horizontally */
+    padding: 20px; /* Adds 20px padding inside the container */
+    background-color: white; /* Sets a white background color for the container */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the container */
 }
+
+/* Styling for main headings */
 h1 {
-    text-align: center;
+    text-align: center; /* Centers the text horizontally */
 }
+
+/* Styling for labels within forms */
 label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
+    display: block; /* Makes the label a block-level element, so it takes up the full width */
+    margin-bottom: 8px; /* Adds 8px space below the label */
+    font-weight: bold; /* Makes the label text bold */
 }
+
+/* Styling for text and number input fields */
 input[type="text"], input[type="number"] {
-    width: calc(100% - 10px);
-    padding: 8px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    width: calc(100% - 10px); /* Sets the width to 100% of the parent element minus 10px */
+    padding: 8px; /* Adds 8px padding inside the input field */
+    margin-bottom: 20px; /* Adds 20px space below the input field */
+    border: 1px solid #ccc; /* Sets a light grey border around the input field */
+    border-radius: 4px; /* Rounds the corners of the input field */
 }
+
+/* Styling for submit buttons and other buttons */
 input[type="submit"], button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
+    width: 100%; /* Makes the button take up the full width of its container */
+    padding: 10px; /* Adds 10px padding inside the button */
+    background-color: #4CAF50; /* Sets a green background color */
+    color: white; /* Sets the text color to white */
+    border: none; /* Removes the default border */
+    border-radius: 4px; /* Rounds the corners of the button */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering */
+    font-size: 16px; /* Sets the font size to 16px */
 }
+
+/* Styling for button hover effect */
 input[type="submit"]:hover, button:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* Changes the background color to a slightly darker green when hovered */
 }
+
+/* Styling for subject containers */
 .subject {
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    background-color: #f9f9f9;
-    position: relative;
+    margin-bottom: 20px; /* Adds 20px space below the subject container */
+    padding: 10px; /* Adds 10px padding inside the subject container */
+    border: 1px solid #ddd; /* Sets a light grey border around the subject container */
+    border-radius: 4px; /* Rounds the corners of the subject container */
+    background-color: #f9f9f9; /* Sets a very light grey background color */
+    position: relative; /* Positions the subject container relative to its normal position */
 }
+
+/* Styling for remove buttons within subject containers */
 .subject .remove-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: red;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    line-height: 30px;
-    cursor: pointer;
+    position: absolute; /* Positions the button absolutely within the subject container */
+    top: 10px; /* Positions the button 10px from the top of the container */
+    right: 10px; /* Positions the button 10px from the right edge of the container */
+    background: red; /* Sets the background color to red */
+    color: white; /* Sets the text color to white */
+    border: none; /* Removes the default border */
+    border-radius: 50%; /* Makes the button circular */
+    width: 30px; /* Sets the button width to 30px */
+    height: 30px; /* Sets the button height to 30px */
+    text-align: center; /* Centers the text horizontally */
+    line-height: 30px; /* Centers the text vertically by setting line height equal to button height */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering */
 }
+
+/* Styling for sub-grade sections within subjects */
 .sub-grade {
-    margin-top: 10px;
-    padding-left: 20px;
-    border-left: 2px solid #ddd;
+    margin-top: 10px; /* Adds 10px space above the sub-grade section */
+    padding-left: 20px; /* Adds 20px padding to the left of the sub-grade section */
+    border-left: 2px solid #ddd; /* Adds a left border with a light grey color */
 }
+
+/* Container for sub-grades within subjects */
 .sub-grade-container {
-    margin-top: 10px;
+    margin-top: 10px; /* Adds 10px space above the sub-grade container */
 }
+
+/* Styling for remove buttons within sub-grade containers */
 .sub-grade-container .remove-sub-grade {
-    background: red;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    line-height: 20px;
-    cursor: pointer;
+    background: red; /* Sets the background color to red */
+    color: white; /* Sets the text color to white */
+    border: none; /* Removes the default border */
+    border-radius: 50%; /* Makes the button circular */
+    width: 20px; /* Sets the button width to 20px */
+    height: 20px; /* Sets the button height to 20px */
+    text-align: center; /* Centers the text horizontally */
+    line-height: 20px; /* Centers the text vertically by setting line height equal to button height */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering */
 }
+
+/* Styling for the result popup */
 #resultPopup {
-    display: none;
-    position: fixed;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 15px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    display: none; /* Hides the popup by default */
+    position: fixed; /* Fixes the popup position relative to the viewport */
+    bottom: 10px; /* Positions the popup 10px from the bottom of the viewport */
+    left: 50%; /* Centers the popup horizontally */
+    transform: translateX(-50%); /* Adjusts the horizontal position to exactly center the popup */
+    padding: 15px; /* Adds 15px padding inside the popup */
+    background-color: #f0f0f0; /* Sets a light grey background color */
+    border: 1px solid #ccc; /* Sets a light grey border around the popup */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the popup */
+    z-index: 1000; /* Ensures the popup appears above other elements */
 }
+
+/* Styling for add and remove buttons */
 .add-remove-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
+    display: flex; /* Uses flexbox to align child elements */
+    justify-content: center; /* Centers the child elements horizontally */
+    align-items: center; /* Centers the child elements vertically */
+    gap: 10px; /* Adds 10px space between child elements */
+    margin-bottom: 20px; /* Adds 20px space below the button container */
 }
+
+/* Styling for buttons inside the add-remove-buttons container */
 .add-remove-buttons button {
-    width: 30px;
-    height: 30px;
-    font-size: 20px; /* Adjust font size if needed */
-    background: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center; /* Ensure text alignment is centered */
+    width: 30px; /* Sets the button width to 30px */
+    height: 30px; /* Sets the button height to 30px */
+    font-size: 20px; /* Sets the font size to 20px */
+    background: #4CAF50; /* Sets the background color to green */
+    color: white; /* Sets the text color to white */
+    border: none; /* Removes the default border */
+    border-radius: 50%; /* Makes the button circular */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering */
+    display: flex; /* Uses flexbox to align text */
+    justify-content: center; /* Centers the text horizontally */
+    align-items: center; /* Centers the text vertically */
+    text-align: center; /* Ensures text alignment is centered */
 }
+
+/* Styling for remove buttons inside the add-remove-buttons container */
 .add-remove-buttons button.remove {
-    background: red;
+    background: red; /* Sets the background color to red for remove buttons */
 }
