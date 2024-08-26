@@ -2,7 +2,7 @@ function addSubject() {
     let subjectContainer = document.createElement('div');
     subjectContainer.className = 'subject';
     subjectContainer.innerHTML = `
-        <button type="button" class="remove-button" onclick="removeSubject(this)">−</button>
+        <button type="button" class="remove-button" onclick="removeSubject(this)">Remove Subject</button>
         <label>Subject Name:</label>
         <input type="text" name="subject_name[]" placeholder="Enter subject name" required>
         <label>Grade:</label>
