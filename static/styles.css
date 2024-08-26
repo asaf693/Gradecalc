@@ -77,6 +77,9 @@ input[type="submit"]:hover, button:hover {
     text-align: center; /* Centers the text horizontally */
     line-height: 30px; /* Centers the text vertically by setting line height equal to button height */
     cursor: pointer; /* Changes the cursor to a pointer when hovering */
+    display: flex; /* Uses flexbox to align text */
+    justify-content: center; /* Centers the text horizontally */
+    align-items: center; /* Centers the text vertically */
 }
 
 /* Styling for sub-grade sections within subjects */
