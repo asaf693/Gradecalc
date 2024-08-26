@@ -102,15 +102,16 @@ input[type="submit"]:hover, button:hover {
 .add-remove-buttons button {
     width: 30px;
     height: 30px;
-    font-size: 18px; /* Adjust font size if needed */
+    font-size: 20px; /* Adjust font size if needed */
     background: #4CAF50;
     color: white;
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    display: flex; /* Use Flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Ensure text alignment is centered */
 }
 .add-remove-buttons button.remove {
     background: red;
