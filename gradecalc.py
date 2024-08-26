@@ -47,7 +47,7 @@ def calculate():
 
     average_grade = total_score / total_weight if total_weight > 0 else 0
 
-    return f"Average Grade: {average_grade:.2f}%"
+    return f"Average Grade: {average_grade:.2f}"
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5001))
