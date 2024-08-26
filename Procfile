@@ -1,1 +1,1 @@
-web: python gradecalc/gradecalc.py
+web: python gradecalc.py
