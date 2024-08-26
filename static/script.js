@@ -20,7 +20,7 @@ function addSubject() {
                 <input type="number" name="sub_grade[]" min="0" max="100" placeholder="Enter sub-grade">
                 <label>Sub-Grade Percentage:</label>
                 <input type="number" name="sub_grade_percentage[]" min="0" max="100" placeholder="Enter sub-grade percentage">
-                <button type="button" class="remove-sub-grade" onclick="removeSubGrade(this)">−</button>
+                <button type="button" class="remove-sub-grade" onclick="removeSubGrade(this)">Remove Subject</button>
             </div>
         </div>
     `;
