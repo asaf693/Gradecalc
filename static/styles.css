@@ -71,9 +71,10 @@ input[type="submit"]:hover, button:hover {
     background: red; /* Sets the background color to red */
     color: white; /* Sets the text color to white */
     border: none; /* Removes the default border */
-    border-radius: 50%; /* Makes the button circular */
-    width: 30px; /* Sets the button width to 30px */
-    height: 30px; /* Sets the button height to 30px */
+    /*border-radius: 50%; !* Makes the button circular *!*/
+    width: 120px; /* Sets the button width to 120px */
+    height: 10px; /* Sets the button height to 30px */
+    font-size: 11px; /* Sets the font size to 20px */
     text-align: center; /* Centers the text horizontally */
     line-height: 30px; /* Centers the text vertically by setting line height equal to button height */
     cursor: pointer; /* Changes the cursor to a pointer when hovering */
@@ -117,7 +118,7 @@ input[type="submit"]:hover, button:hover {
     padding: 15px; /* Adds 15px padding inside the popup */
     background-color: #f0f0f0; /* Sets a light grey background color */
     border: 1px solid #ccc; /* Sets a light grey border around the popup */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the popup */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the popup */
     z-index: 1000; /* Ensures the popup appears above other elements */
 }
 
@@ -132,9 +133,9 @@ input[type="submit"]:hover, button:hover {
 
 /* Styling for buttons inside the add-remove-buttons container */
 .add-remove-buttons button {
-    width: 30px; /* Sets the button width to 30px */
+    width: 140px; /* Sets the button width to 140px */
     height: 30px; /* Sets the button height to 30px */
-    font-size: 20px; /* Sets the font size to 20px */
+    font-size: 16px; /* Sets the font size to 20px */
     background: #4CAF50; /* Sets the background color to green */
     color: white; /* Sets the text color to white */
     border: none; /* Removes the default border */

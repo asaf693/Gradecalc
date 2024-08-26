@@ -50,5 +50,5 @@ def calculate():
     return f"Average Grade: {average_grade:.2f}%"
 
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))
+    port = int(os.environ.get('PORT', 5001))
     gradecalc.run(host='0.0.0.0', port=port)
