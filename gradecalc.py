@@ -1,4 +1,6 @@
+import os
 from flask import Flask, request, render_template
+
 
 gradecalc = Flask(__name__)
 
