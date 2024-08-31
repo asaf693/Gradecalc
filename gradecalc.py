@@ -67,9 +67,9 @@ def calculate():
         return str(e), 400  # Return the error message with a 400 Bad Request status
 
 
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port)
+if __name__ == '__main__':
+    port = int(os.environ.get('PORT', 5001))
+    gradecalc.run(host='0.0.0.0', port=port)
 
 
 
